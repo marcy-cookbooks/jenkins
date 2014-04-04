@@ -15,6 +15,7 @@ yum_repository "jenkins" do
 end
 
 package "java" do
+  version "1.7.0"
   action :install
 end
 
