@@ -6,6 +6,7 @@ Requirements
 ------------
 * Chef 11 or higher
 * CentOS5,6 or Amazon Linux
+* Java 1.6 or higher
 
 Attributes
 ----------

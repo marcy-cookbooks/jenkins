@@ -14,10 +14,6 @@ yum_repository "jenkins" do
   enabled true
 end
 
-package "java-1.7.0" do
-  action :install
-end
-
 package "jenkins" do
   action :install
 end
