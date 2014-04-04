@@ -9,7 +9,7 @@
 
 yum_repository "jenkins" do
   description "jenkins repo"
-  baseurl "http://pkg.jenkins-ci.org/redhat/jenkins.repo"
+  baseurl "http://pkg.jenkins-ci.org/redhat/"
   gpgkey  "http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key"
   enabled true
 end
