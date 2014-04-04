@@ -13,6 +13,10 @@ RSpec.configure do |c|
   end
 end
 
+describe package('java') do
+  it { should be_installed }
+end
+
 describe package('jenkins') do
   it { should be_installed }
 end
