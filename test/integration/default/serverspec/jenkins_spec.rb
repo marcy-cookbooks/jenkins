@@ -13,7 +13,7 @@ RSpec.configure do |c|
   end
 end
 
-describe package('java') do
+describe package('java-1.7.0') do
   it { should be_installed }
 end
 
