@@ -1,21 +1,20 @@
 ---
-driver_plugin: docker
-
-driver_config:
-  use_sudo: false
+driver_plugin: docker_cli
 
 provisioner:
-  name: chef_solo
+  name: chef_zero
 
 platforms:
-  - name: centos-6.4
+  - name: centos-6.6
 
 suites:
   - name: default
+    driver_config:
+      publish: 8080:8080
     run_list:
-      - recipe[java::default]
       - recipe[jenkins::default]
     attributes:
-
-busser:
-  sudo: true
+      jenkins:
+        listen_address: 0.0.0.0
+        ajp_listen_address: 127.0.0.1
+        args: -prefix=/jenkins

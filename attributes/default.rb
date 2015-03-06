@@ -1,0 +1,15 @@
+default['java']['install_flavor'] = "openjdk"
+default['java']['jdk_version']  = "7"
+default['jenkins']['home'] = "/var/lib/jenkins"
+default['jenkins']['java_cmd'] = ""
+default['jenkins']['user'] = "jenkins"
+default['jenkins']['java_options'] = "-Djava.awt.headless=true"
+default['jenkins']['port'] = 8080
+default['jenkins']['ajp_port'] = 8009
+default['jenkins']['listen_address'] = ""
+default['jenkins']['ajp_listen_address'] = ""
+default['jenkins']['debug_level'] = 5
+default['jenkins']['enable_access_log'] = false
+default['jenkins']['handler_max'] = 100
+default['jenkins']['handler_idle'] = 20
+default['jenkins']['args'] = ""
